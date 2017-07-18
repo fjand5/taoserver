@@ -5,4 +5,4 @@ http.createServer((req,res)=>{
 	console.log("So thiet bi "+ sl);
 	res.writeHead(200, {"Content-Type": "text/html"});
 	res.end("<h1>Chao thiet bi + sl </h1>");
-}).listen(80);
+}).listen(process.env.PORT || 80);
